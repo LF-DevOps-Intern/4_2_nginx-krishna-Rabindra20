@@ -1,4 +1,4 @@
-1. Install nginx and host a simple index.html with message “hello nginx”
+### Install nginx and host a simple index.html with message “hello nginx”
 Steps:<br/>
 Installing Nginx<br/>
 <pre>sudo apt install nginx</pre> <br/>
@@ -18,7 +18,7 @@ Setting Up Server Blocks<br/>
 Create the directory for localhost<br/>
 <pre><pre>sudo mkdir -p /var/www/localhost/html</pre> <br/>
 create a sample index.html page<br/>
-nano /var/www/your_domain/html/index.html</pre> <br/>
+nano /var/www/localhost/html/index.html</pre> <br/>
 <html><br/>
     <head><br/>
         <title>Welcome to hello nginx </title><br/>
