@@ -18,21 +18,15 @@ Setting Up Server Blocks<br/>
 Create the directory for localhost<br/>
 <pre><pre>sudo mkdir -p /var/www/localhost/html</pre> <br/>
 create a sample index.html page<br/>
-nano /var/www/localhost/html/index.html</pre> <br/>
-<html><br/>
-    <head><br/>
-        <title>Welcome to hello nginx </title><br/>
-    </head><br/>
-    <body><br/>
-        <h1>hello nginx</h1><br/>
-    </body><br/>
-</html><br/>
+<pre>nano /var/www/localhost/html/index.html</pre> <br/>
+Add message in html file<br/>
+<pre>test is successful</pre>
 
 ![index html](https://user-images.githubusercontent.com/53372486/141984764-239883a7-fd96-4aad-ad75-6e1e9390e695.png)<br/>
 
-create a server block<br/>
-<pre>sudo nano /etc/nginx/sites-available/localhost</pre> <br/>
-
+create localhost.conf file inside /etc/nginx/sites-available<br/>
+<pre>sudo nano /etc/nginx/sites-available/localhost.conf</pre> <br/>
+Add below line in localhost.conf file<br/>
 <pre>server {<br/>
         listen 80;<br/>
         listen [::]:80;<br/>
@@ -45,9 +39,9 @@ create a server block<br/>
     }</pre>
     
 <br/>
- enable the file by creating a link which Nginx reads from during startup<br/>
+ Enable the file by creating a link which Nginx reads from during startup<br/>
 <pre>sudo ln -s /etc/nginx/sites-available/localhost /etc/nginx/sites-enabled/</pre> <br/>
-<pre>sudo nano /etc/nginx/nginx.conf</pre> <br/>
+
 For testing<br/>
     <pre>sudo nginx -t</pre>   
     <br/>

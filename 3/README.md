@@ -4,7 +4,7 @@ Start Pm2<br/>
 <pre>sudo pm2 start 6080.js</pre><br/>
 create reverse_proxy.conf file inside /etc/nginx/sites-available<br/>
 <pre>sudo nano reverse_proxy.conf</pre><br/>
-Add below line in reverse_proxy.conf<br/>
+Add below line in reverse_proxy.conf file<br/>
 <pre>server {
     listen 81;
     server_name localhost;
@@ -15,7 +15,7 @@ Add below line in reverse_proxy.conf<br/>
 }</pre><br/>
 ![reverse conf](https://user-images.githubusercontent.com/53372486/142033450-b07582b6-6d63-44ba-a5a5-11034bc92164.png)<br/>
 creating a link from it to the sites-enabled directory, which Nginx reads from during startup<br/>
-sudo ln -rs reverse_proxy.conf ../sites-enabled/</pre><br/>
+<pre>sudo ln -rs reverse_proxy.conf ../sites-enabled/</pre><br/>
 For testing<br/>
     <pre>sudo nginx -t</pre>   
     <br/>

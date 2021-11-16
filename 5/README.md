@@ -1,8 +1,8 @@
 ### Reverse proxy all http traffic of port 82 to port 85.
 Steps:<br/>
-create reverse_proxy.conf file inside /etc/nginx/sites-available<br/>
+create reverse_proxy1.conf file inside /etc/nginx/sites-available<br/>
 <pre>sudo nano reverse_proxy1.conf</pre><br/>
-Add below line in reverse_proxy1.conf<br/>
+Add below line in reverse_proxy1.conf file<br/>
 <pre>server {<br/>
     listen 85;<br/>
     server_name localhost;<br/>

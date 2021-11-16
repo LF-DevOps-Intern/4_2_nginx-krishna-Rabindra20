@@ -39,6 +39,7 @@ Restart nginx<br/>
 
 ![status](https://user-images.githubusercontent.com/53372486/142030784-0cebe88e-e51f-4544-9248-0c3dd61192bf.png)<br/>
 
+Display<br/>
 open web browser > inspect > click on network > check header response<br/>
 
 ![response header](https://user-images.githubusercontent.com/53372486/142030790-03022c4a-aa9d-4b8f-a267-ef5966d9bfbc.png)
