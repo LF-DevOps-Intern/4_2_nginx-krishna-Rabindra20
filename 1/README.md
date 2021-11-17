@@ -20,7 +20,7 @@ Create the directory for localhost<br/>
 create a sample index.html page<br/>
 <pre>nano /var/www/localhost/html/index.html</pre> <br/>
 Add message in html file<br/>
-<pre>test is successful</pre>
+<pre>hello nginx</pre>
 
 ![index html](https://user-images.githubusercontent.com/53372486/141984764-239883a7-fd96-4aad-ad75-6e1e9390e695.png)<br/>
 
