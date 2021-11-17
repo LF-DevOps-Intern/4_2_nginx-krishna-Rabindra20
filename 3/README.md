@@ -15,10 +15,9 @@ Add below line in reverse_proxy.conf file<br/>
 }</pre><br/>
 ![reverse conf](https://user-images.githubusercontent.com/53372486/142033450-b07582b6-6d63-44ba-a5a5-11034bc92164.png)<br/>
 creating a link from it to the sites-enabled directory, which Nginx reads from during startup<br/>
-<pre>sudo ln -rs reverse_proxy.conf ../sites-enabled/</pre><br/>
+<pre>sudo ln -rs /etc/nginx/sites-available/reverse_proxy.conf /etc/nginx/sites-enabled/</pre><br/>
 For testing<br/>
-    <pre>sudo nginx -t</pre>   
-    <br/>
+    <pre>sudo nginx -t</pre><br/>
 Restart nginx<br/>
 <pre>sudo systemctl restart nginx</pre><br/>
 

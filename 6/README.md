@@ -43,7 +43,7 @@ Add below line in php.conf file<br/>
    ![php conf](https://user-images.githubusercontent.com/53372486/142132083-60901bed-5e5b-4d95-9676-8969391d4f62.png) <br/>
 
  Enable the file by creating a link which Nginx reads from during startup<br/>
-<pre>sudo ln -s /etc/nginx/sites-available/php.conf /etc/nginx/sites-enabled/</pre> <br/>
+<pre>sudo ln -rs /etc/nginx/sites-available/php.conf /etc/nginx/sites-enabled/</pre> <br/>
 
 ![symlink](https://user-images.githubusercontent.com/53372486/142132092-af16420e-044f-4421-8e4e-d61e044f2bd4.png)<br/>
 

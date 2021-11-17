@@ -5,7 +5,7 @@ Nowadays too many data breaches are happening, many websites are hacked due to m
 some header security are:-<br/>
 1. Cross-Site Scripting Protection (X-XSS)<br/>
 ->X-XSS header helps protect websites against script injection attacks. When an attacker injects malicious JavaScript code into an HTTP request for accessing confidential information such as session cookies, at that time HTTP X-XSS-Protection header can stop the browsers from loading suce web pages, whenever any detect is reflected cross-site scripting (XSS) attacks. XSS is a very common and effective attack.<br/>
-  <pre>X-XSS-Protection: 0 <br/>
+   <pre>X-XSS-Protection: 0 <br/>
   X-XSS-Protection: 1 <br/>
   X-XSS-Protection: 1; mode=block <br/>
   X-XSS-Protection: 1; report=<reporting-uri></pre>
@@ -13,7 +13,7 @@ some header security are:-<br/>
 
 2. Website IFrame Protection<br/>
 ->The X-Frame-Options HTTP response header can be used to instruct the browser whether a web page should be allowed to render a <frame>, <iframe>, <embed> or <object> element on website or not.<br/>
- <pre>X-Frame-Options: DENY <br/>
+  <pre>X-Frame-Options: DENY <br/>
   X-Frame-Options: SAMEORIGIN</pre>
   <br/>
 
@@ -53,7 +53,7 @@ Add below line in localhost.conf<br/>
 ![localhost conf](https://user-images.githubusercontent.com/53372486/142030766-101414d4-2f83-4a83-ae33-879baef30432.png)<br/>
 
 creating a link from it to the sites-enabled directory, which Nginx reads from during startup<br/>
-<pre>sudo ln -rs localhost.conf ../sites-enabled/</pre><br/>
+<pre>sudo ln -rs /etc/nginx/sites-available/localhost.conf /etc/nginx/sites-enabled/</pre><br/>
 For testing<br/>
     <pre>sudo nginx -t</pre>   
     <br/>

@@ -29,7 +29,7 @@ Add below line in test.conf file<br/>
 ![test conf](https://user-images.githubusercontent.com/53372486/142034857-2ecc092d-bcc9-44a9-9775-2f5900a72f35.png)<br/>
 
  Enable the file by creating a link which Nginx reads from during startup<br/>
-<pre>sudo ln -s /etc/nginx/sites-available/localhost /etc/nginx/sites-enabled/</pre> <br/>
+<pre>sudo ln -rs /etc/nginx/sites-available/test.conf /etc/nginx/sites-enabled/</pre> <br/>
 
 For testing<br/>
     <pre>sudo nginx -t</pre>   

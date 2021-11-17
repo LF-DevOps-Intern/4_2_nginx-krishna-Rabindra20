@@ -14,7 +14,7 @@ Add below line in reverse_proxy1.conf file<br/>
 ![proxy](https://user-images.githubusercontent.com/53372486/142036009-6998b7c6-9f51-428c-9522-4d0741429a17.png)<br/>
 
 creating a link from it to the sites-enabled directory, which Nginx reads from during startup<br/>
-<pre>sudo ln -rs reverse_proxy.conf ../sites-enabled/</pre><br/>
+<pre>sudo ln -rs /etc/nginx/sites-available/reverse_proxy1.conf /etc/nginx/sites-enabled/</pre><br/>
 For testing<br/>
     <pre>sudo nginx -t</pre>   
     <br/>
