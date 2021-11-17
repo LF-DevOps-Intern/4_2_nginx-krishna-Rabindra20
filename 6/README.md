@@ -10,7 +10,7 @@ Create the directory for localhost<br/>
 <pre>sudo mkdir -p /var/www/php</pre> <br/>
 create a sample info.php page<br/>
 <pre>nano /var/www/php/info.php</pre> <br/>
-Add message in html file<br/>
+Add message in php file<br/>
 <pre><?php<br/>
 phpinfo();<br/>
 ?><br/></pre>
@@ -40,7 +40,7 @@ Add below line in php.conf file<br/>
         }<br/>
 }<br/></pre>
 
-   ![php conf](https://user-images.githubusercontent.com/53372486/142132083-60901bed-5e5b-4d95-9676-8969391d4f62.png) <br/>
+   ![php](https://user-images.githubusercontent.com/53372486/142134963-004b40df-9b69-4c24-ae4c-f0dcbb16708e.png) <br/>
 
  Enable the file by creating a link which Nginx reads from during startup<br/>
 <pre>sudo ln -rs /etc/nginx/sites-available/php.conf /etc/nginx/sites-enabled/</pre> <br/>
