@@ -40,7 +40,8 @@ Add below line in php.conf file<br/>
         }<br/>
 }<br/></pre>
 
-   ![php](https://user-images.githubusercontent.com/53372486/142134963-004b40df-9b69-4c24-ae4c-f0dcbb16708e.png) <br/>
+   ![php conf](https://user-images.githubusercontent.com/53372486/142135526-f119b82d-4456-4457-b979-31a47ef689c9.png)
+ <br/>
 
  Enable the file by creating a link which Nginx reads from during startup<br/>
 <pre>sudo ln -rs /etc/nginx/sites-available/php.conf /etc/nginx/sites-enabled/</pre> <br/>
