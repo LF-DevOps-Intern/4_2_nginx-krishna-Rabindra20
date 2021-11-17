@@ -16,7 +16,7 @@ Checking nginx status<br/>
 
 Setting Up Server Blocks<br/>
 Create the directory for localhost<br/>
-<pre><pre>sudo mkdir -p /var/www/localhost/html</pre> <br/>
+<pre>sudo mkdir -p /var/www/localhost/html</pre> <br/>
 create a sample index.html page<br/>
 <pre>nano /var/www/localhost/html/index.html</pre> <br/>
 Add message in html file<br/>

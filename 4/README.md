@@ -7,7 +7,7 @@ create a sample index.html page<br/>
 Add message in html file<br/>
 <pre>test is successful</pre>
 
-![index](https://user-images.githubusercontent.com/53372486/142034066-85147676-be29-4f6f-84e9-2cc8cc6e6f18.png)<br/>
+![index](https://user-images.githubusercontent.com/53372486/142105153-d53c572c-f06c-4084-9eea-09a4f6207dba.png)<br/>
 
 create test.conf file inside /etc/nginx/sites-available<br/>
 <pre>sudo nano /etc/nginx/sites-available/test.conf</pre> <br/>
